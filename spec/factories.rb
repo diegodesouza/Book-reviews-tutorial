@@ -12,15 +12,15 @@ FactoryGirl.define do
     title 'Green Eggs and Ham'
     published_at '1960-08-12'
 
-    association :author, factory: :author
+    author
   end
 
   factory :review do
     body 'A++++ would read again!!!!!!!!'
     rating 10
 
-    association :book, factory: :book
-    association :user, factory: :user
+    book
+    user
   end
 
 end
